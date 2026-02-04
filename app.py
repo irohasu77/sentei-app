@@ -10,8 +10,8 @@ st.set_page_config(layout="wide")
 # ============================
 # 設定
 # ============================
-IMAGE_DIR = r"C:\AI\sentei\sentei\characters"
-FEATURE_FILE = r"C:\AI\sentei\sentei\character_features.json"
+IMAGE_DIR = r"characters"
+FEATURE_FILE = r"character_features.json"
 
 # ============================
 # 髪型分類体系（大分類→中分類→細分類）
