@@ -7,8 +7,8 @@ from transformers import CLIPProcessor, CLIPModel
 # ============================
 # 設定
 # ============================
-IMAGE_DIR = r"C:\AI\sentei\sentei\characters"
-FEATURE_FILE = r"C:\AI\sentei\sentei\character_features.json"
+IMAGE_DIR = r"characters"
+FEATURE_FILE = r"character_features.json"
 
 # ============================
 # 髪色分類体系（大分類→中分類）
