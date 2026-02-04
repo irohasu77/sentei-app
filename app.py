@@ -86,8 +86,10 @@ def save_if_changed(key, new_value):
 # ============================
 # CLIPモデル読み込み
 # ============================
+'''
 clip_model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
 clip_processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+'''
 
 # ============================
 # 推定関数（髪色は大分類のみ）
