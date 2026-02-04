@@ -150,7 +150,7 @@ with col1:
         list(range(len(image_files))),
         format_func=lambda i: display_labels[i],
         index=current_index,   # ← これが常に最新になる
-        key=f"radio_{st.session_state['selected_image']}"
+        key="radio_select"
     )
 
     selected_radio = image_files[selected_index]
