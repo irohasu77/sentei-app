@@ -2,8 +2,6 @@ import streamlit as st
 import os
 import json
 from PIL import Image
-import torch
-from transformers import CLIPProcessor, CLIPModel
 
 st.set_page_config(layout="wide")
 
@@ -340,7 +338,7 @@ with col2:
             other = st.text_input("その他", data["other"], key=f"widget_other_{selected}")
             save_if_changed(f"data_other_{selected}", other)
 
-                        # ============================
+            # ============================
             # JSON保存
             # ============================
             features[selected] = {
