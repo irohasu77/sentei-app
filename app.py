@@ -83,14 +83,13 @@ def save_if_changed(key, new_value):
         st.session_state[key] = new_value
         save_json()
 
-'''
 # ============================
 # CLIPモデル読み込み
 # ============================
-
+'''
 clip_model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
 clip_processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
-
+'''
 
 # ============================
 # 推定関数（髪色は大分類のみ）
@@ -173,7 +172,6 @@ def analyze_character(image_path):
         "vibe": predict_vibe(image_path),
         "other": ""
     }
-'''
 
 # ============================
 # JSON読み込み
