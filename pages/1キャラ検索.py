@@ -206,10 +206,10 @@ st.write(f"検索結果：{len(results)}件")
 TARGET_HEIGHT = 200
 CANVAS_SIZE = 200  # キャンバスの縦横（好きに調整できる）
 
-cols = st.columns(5)
+cols = st.columns(3)
 
 for idx, r in enumerate(results):
-    with cols[idx % 5]:
+    with cols[idx % 3]:
         img = Image.open(os.path.join(IMAGE_DIR, r)).convert("RGB")
 
         # 元サイズ
