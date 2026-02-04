@@ -4,3 +4,4 @@ numpy
 mlxtend
 Pillow
 torch
+transformers
