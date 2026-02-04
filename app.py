@@ -10,8 +10,9 @@ st.set_page_config(layout="wide")
 # ============================
 # 設定
 # ============================
-IMAGE_DIR = r"characters"
-FEATURE_FILE = r"character_features.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+IMAGE_DIR = os.path.join(BASE_DIR, "characters")
+FEATURE_FILE = os.path.join(BASE_DIR, "character_features.json")
 
 # ============================
 # 髪型分類体系（大分類→中分類→細分類）
